@@ -6,9 +6,7 @@ import cookieParser from "cookie-parser";
 const p = express();
 p.use(express.json());
 p.use(cookieParser());
-const client = new MongoClient(
-  "mongodb+srv://gleb:GPetrov1303@cluster0.fzb5rxf.mongodb.net/?appName=Cluster0",
-);
+const client = new MongoClient(process.env.KEY);
 const startServer = async () => {
   try {
     await client.connect();
