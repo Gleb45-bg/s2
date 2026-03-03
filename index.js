@@ -195,6 +195,9 @@ const startServer = async () => {
     console.error("Ошибка подключения к MongoDB:", error);
   }
 };
+
+export default p;
+
 startServer();
 /*p.listen(4567, () => {
     console.log(`Сервер запущен на http://localhost:${4567}`);
