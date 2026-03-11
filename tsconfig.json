@@ -8,6 +8,7 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "esModuleInterop": true,
+    "outDir": "./api",
     // Bundler mode
     "moduleResolution": "nodenext",
     "allowImportingTsExtensions": false,
